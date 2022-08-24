@@ -1,179 +1,22 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=GFS+Didot&family=Raleway:wght@100;200;300;400;500;600&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1em;
 }
+
 h2 {
   font-family: "GFS Didot", serif;
 }
+
 .withe {
   background-color: #fff;
-}
-.nav {
-  display: flex;
-  justify-content: center;
-}
-
-/* ===== SECTION MAIN =====*/
-
-.hero .info-content h1 {
-  font-size: 2.2em;
-}
-.hero .info-content span {
-  font-size: 0.8em;
-}
-.hero {
-  height: 90vh;
-  background: hsla(200, 4%, 14%, 0.608);
-  background: -webkit-linear-gradient(
-    to right,
-    hsla(210, 3%, 26%, 0.5),
-    hsla(210, 4%, 14%, 0.5)
-  );
-  background: linear-gradient(
-      to right,
-      hsla(210, 3%, 26%, 0.5),
-      hsla(200, 4%, 14%, 0.5)
-    ),
-    url(../imagenes/american-diner-1950.jpg);
-
-  background-size: cover;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-}
-
-.hero .info-content {
-  grid-column: 2 / 10;
-  grid-row: 4 / 7;
-  color: #fff;
-}
-.hero h3 {
-  font-family: "GFS Didot", serif;
-  font-size: 1.2em;
-  font-weight: 300;
-}
-
-.hero h1 {
-  font-size: 3.5em;
-  font-weight: 500;
-  font-family: "GFS Didot", serif;
-}
-
-.hero p {
-  font-weight: 300;
-  font-size: 1.1em;
-}
-.hero .btn {
-  font-size: 1em;
-  background: none;
-  color: #fff;
-  padding: 10px 20px;
-  border: 1px solid #fff;
-  margin-top: 25px;
-}
-
-/* ===SECTION - CARRUSEL ====*/
-
-/*===== ESTILOS - GALERIA ======*/
-
-.gallery p {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 200px;
-  padding: 30px;
-  gap: 15px;
-  background-color: #f3f3f3;
-}
-.gallery h2 {
-  font-family: "GFS Didot", serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin-top: 40px;
-  padding: 15px;
-  text-align: center;
-}
-.gallery-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.gallery-item:nth-child(1) {
-  grid-row-start: span 3;
-}
-
-/*===== DINER PLAZA ======*/
-
-.diner-plaza {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.diner-plaza-titulo h2 {
-  font-family: "GFS Didot", serif;
-  font-size: 1.8em;
-  font-weight: 300;
-  margin: 100px 50px 50px 50px;
-  text-align: center;
-}
-.diner-plaza-texto {
-  text-align: center;
-  margin: 0px 50px 50px 50px;
-}
-
-/*===== ESTILOS - Nueva Galeria ======*/
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #f3f3f3;
-  border-radius: 4px;
-  transition: transform 0.3s ease-in-out;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.grid-item:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04);
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: minmax(200px, auto);
-  gap: 20px;
-  padding: 20px;
-  grid-auto-flow: dense;
-  margin-right: 0;
-  margin-left: 0;
-}
-.grid-img {
-  width: 90%;
-  height: 90%;
-}
-.wide {
-  grid-column: span 2;
-}
-.tall {
-  grid-row: span 2;
 }
 
 /*===== FOOTER ======*/
@@ -184,6 +27,7 @@ footer {
   padding: 40px;
   background-color: #f3f3f3;
 }
+
 .container-footer {
   width: 100%;
   display: grid;
@@ -202,12 +46,14 @@ footer {
 .container-footer .section-aboutus p {
   color: #1e1e1e;
 }
+
 .sci {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(5, 50px);
   gap: 10px;
 }
+
 .sci li {
   list-style: none;
 }
@@ -227,44 +73,55 @@ footer {
 .sci li a:hover {
   background-color: #69737c;
 }
+
 .sci li a .fa {
   color: #fff;
   font-size: 1em;
 }
+
 .section-quicklinks {
   position: relative;
   margin-bottom: 10px;
 }
+
 .section-quicklinks h2 {
   font-size: 1.5em;
 }
+
 .section-quicklinks li {
   list-style: none;
 }
+
 .section-quicklinks li a {
   color: #1e1e1e;
   text-decoration: none;
   margin-bottom: 5px;
   display: inline-block;
 }
+
 .section-quicklinks li a:hover {
   color: #69737c;
 }
+
 .seccion-contacto h2 {
   font-size: 1.5em;
 }
+
 .info li {
   display: grid;
   grid-template-columns: 20px 1fr;
   margin-bottom: 5px;
 }
+
 .info a {
   text-decoration: none;
   color: #1e1e1e;
 }
+
 .info a:hover {
   color: #69737c;
 }
+
 .copyrightText {
   width: 100%;
   background-color: #1e1e1e;
@@ -274,21 +131,345 @@ footer {
   font-size: 0.8em;
 }
 
-/*======================================= RESPONSIVE =================================================*/
+/* ******************* MENU-Detalle Menú ***************** */
+.main {
+  width: 100%;
+  margin: 50px auto;
+}
 
-@media (min-width: 600px) {
-  /*==Main Hero ===*/
+.section-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
 
+.section-title h2 {
+  text-transform: capitalize;
+  font-size: 2em;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: #3bc4b2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menus {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu-column {
+  width: 30%;
+}
+
+.menu-column h4 {
+  text-transform: capitalize;
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  position: relative;
+  padding-bottom: 10px;
+  font-family: "GFS Didot", serif;
+}
+
+.menu-column h4::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1.5px;
+  background-color: #3bc4b2;
+  bottom: 0;
+}
+
+.single-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.single-menu img {
+  border-radius: 50%;
+  max-width: 80px;
+  border: 1px dashed #ddd;
+  padding: 3px;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.single-menu:hover img {
+  transform: rotate(360deg);
+}
+
+.single-menu .menu-content h5 {
+  text-transform: capitalize;
+  font-size: 1em;
+  font-weight: 500;
+  border-bottom: 1px dashed #222;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.single-menu .menu-content h5 span {
+  color: #3bc4b2;
+  float: right;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.card {
+  margin: 150px 100px 100px 160px;
+  border: 1px solid #fff;
+}
+
+.card-body {
+  margin-top: 5px;
+}
+
+.card-body h5 {
+  font-family: "GFS Didot", serif;
+  font-size: 2em;
+  margin-left: 30px;
+}
+
+.card-text {
+  margin-left: 30px;
+}
+
+.acercaDinerPlaza {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 300px;
+}
+
+.dinerPlaza-titulo {
+  font-size: 1.6em;
+  position: center;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.dinerPlaza-texto {
+  margin: 20px 200px 20px 200px;
+  font-size: 1em;
+}
+
+/* ******************* MENU - Hero ***************** */
+.hero-menu {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.hero-menu h1 {
+  font-size: 2.7em;
+  line-height: 1.3em;
+  font-weight: 500;
+  font-family: "GFS Didot", serif;
+}
+
+.hero-menu h1 span {
+  font-size: 1.3em;
+  font-weight: 800;
+  color: #3bc4b2;
+}
+
+.textbox p {
+  display: flex;
+  align-items: initial;
+  margin-left: 20px;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||| URL HOME - SECTION MAIN - Hero ||||||||||||||||||||||||||||||||||||||||*/
+.hero .info-content h1 {
+  font-size: 2.2em;
+}
+
+.hero .info-content span {
+  font-size: 0.8em;
+}
+
+.hero {
+  height: 90vh;
+  background: hsla(200deg, 4%, 14%, 0.608);
+  background: linear-gradient(to right, hsla(210deg, 3%, 26%, 0.5), hsla(200deg, 4%, 14%, 0.5)), url(../imagenes/american-diner-1950.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info-content {
+  grid-column: 2/10;
+  grid-row: 4/7;
+  color: #fff;
+}
+
+.hero .info-content span {
+  font-size: 2em;
+}
+
+.hero h3 {
+  font-family: "GFS Didot", serif;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+  font-family: "GFS Didot", serif;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.hero .btn {
+  font-size: 1em;
+  background: none;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  margin-top: 25px;
+}
+
+/* =========================== HOME - SECTION MAIN- CARRUSEL - BOOTSTRAP ================*/
+/*============================ HOME - SECTION MAIN - Gallery ============================*/
+.gallery p {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px;
+  padding: 30px;
+  gap: 15px;
+  background-color: #f3f3f3;
+}
+
+.gallery h2 {
+  font-family: "GFS Didot", serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-item:nth-child(1) {
+  grid-row-start: span 3;
+}
+
+/*============================ HOME - SECTION MAIN - Diner Plaza ============================*/
+.diner-plaza {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.diner-plaza-titulo h2 {
+  font-family: "GFS Didot", serif;
+  font-size: 1.8em;
+  font-weight: 300;
+  margin: 100px 50px 50px 50px;
+  text-align: center;
+}
+
+.diner-plaza-texto {
+  text-align: center;
+  margin: 0px 50px 50px 50px;
+}
+
+/*============================ HOME - SECTION MAIN - Galeria de Platos ============================*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-img {
+  width: 90%;
+  height: 90%;
+}
+
+/*===================================   Main Hero ======================================*/
+@media (min-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 20px;
+    padding: 5px;
+    grid-auto-flow: dense;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .hero .info-content {
-    grid-column: 2 / 8;
-    grid-row: 4 / 6;
+    grid-column: 2/8;
+    grid-row: 4/6;
     color: #fff;
   }
   .hero h1 {
     font-size: 3em;
     font-weight: 500;
   }
-
   .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -296,29 +477,11 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
   }
-}
-
-@media (min-width: 600px) {
   .hero .info-content h1 {
     font-size: 3em;
   }
 }
-
-.hero .info-content span {
-  font-size: 2em;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(250px, auto);
-  gap: 20px;
-  padding: 5px;
-  grid-auto-flow: dense;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .gallery-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -332,7 +495,6 @@ footer {
   .diner-plaza-texto {
     margin: 50px 100px 50px 100px;
   }
-
   /*===== ESTILOS - Nueva Galeria ======*/
   .grid-container {
     display: grid;
@@ -349,8 +511,7 @@ footer {
     width: 90%;
     height: 90%;
   }
-
-  /*===== FOOTER ======*/
+  /*=============================== FOOTER ===========================*/
   footer {
     position: relative;
     width: 100%;
@@ -365,7 +526,6 @@ footer {
     grid-template-rows: 1fr;
     gap: 20px;
   }
-
   .container-footer .section-aboutus h2 {
     position: relative;
     color: #1e1e1e;
@@ -373,7 +533,6 @@ footer {
     margin-bottom: 15px;
     font-size: 1.5em;
   }
-
   .container-footer .section-aboutus p {
     color: #1e1e1e;
   }
@@ -386,7 +545,6 @@ footer {
   .sci li {
     list-style: none;
   }
-
   .sci li a {
     display: inline-block;
     width: 40px;
@@ -398,7 +556,6 @@ footer {
     text-decoration: none;
     border-radius: 4px;
   }
-
   .sci li a:hover {
     background-color: #69737c;
   }
@@ -443,167 +600,68 @@ footer {
   .copyrightText {
     width: 100%;
     background-color: #1e1e1e;
-    padding: 08px 100px;
+    padding: 8px 100px;
     text-align: center;
     color: #fff;
     font-size: 0.8em;
     margin-top: 20px;
   }
 }
-
-/* |||||||||||| URL MENU |||||||||*/
-
-/* **** HERO-Menú ***** */
-.hero-menu {
-  position: relative;
-  width: 100%;
-  min-height: 50vh;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1e1e1e;
-  color: #fff;
-}
-.hero-menu h1 {
-  font-size: 2.7em;
-  line-height: 1.3em;
-  font-weight: 500;
-  font-family: "GFS Didot", serif;
-}
-.hero-menu h1 span {
-  font-size: 1.3em;
-  font-weight: 800;
-  color: #3bc4b2;
-}
-.textbox p {
-  display: flex;
-  align-items: initial;
-  margin-left: 20px;
-}
-
-.main {
-  width: 1200px;
-  margin: 50px auto;
-}
-.section-title {
-  text-align: center;
-  margin-bottom: 80px;
-}
-.section-title h2 {
-  text-transform: capitalize;
-  font-size: 2em;
-  position: relative;
-  display: inline-block;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  background-color: #3bc4b2;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.menus {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.menu-colum {
-  width: 30%;
-}
-.menu-column h4 {
-  text-transform: capitalize;
-  font-size: 1.6em;
-  font-weight: 500;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  position: relative;
-  padding-bottom: 10px;
-  font-family: "GFS Didot", serif;
-}
-.menu-column h4::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 1.5px;
-  background-color: #3bc4b2;
-  bottom: 0;
-}
-.single-menu {
-  display: flex;
-  align-items: center;
-  margin-top: 40px;
-}
-.single-menu img {
-  border-radius: 50%;
-  max-width: 80px;
-  border: 1px dashed #ddd;
-  padding: 3px;
-  margin-right: 15px;
-  transition: 0.3s;
-}
-.single-menu:hover img {
-  transform: rotate(360deg);
-}
-.single-menu .menu-content h5 {
-  text-transform: capitalize;
-  font-size: 1em;
-  font-weight: 500;
-  border-bottom: 1px dashed #222;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-.single-menu .menu-content h5 span {
-  color: #3bc4b2;
-  float: right;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1em;
-}
-.card {
-  margin: 150px 100px 100px 160px;
-  border: 1px solid #fff;
-}
-.card-body {
-  margin-top: 5px;
-}
-.card-body h5 {
-  font-family: "GFS Didot", serif;
-  font-size: 2em;
-  margin-left: 30px;
-}
-.card-text {
-  margin-left: 30px;
-}
-.acercaDinerPlaza {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  background-color: #fff;
-  width: 100%;
-  height: 300px;
-}
-.dinerPlaza-titulo {
-  font-size: 1.6em;
-  position: center;
-  display: inline-block;
-  margin-top: 50px;
-}
-.dinerPlaza-texto {
-  margin: 20px 200px 20px 200px;
-  font-size: 1em;
-}
-/* ------------------------RESPONSIVE - URL MENU -------------*/
-@media (max-width: 768px) {
-  .main {
+/* |||||||||||||||||||||||||||||||||||| RESPONSIVE - URL MENU ||||||||||||||||||||||||||||||||||||||||||||*/
+@media (max-width: 991px) {
+  .menu-column {
+    width: 45%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .single-menu {
+    flex-direction: row;
+  }
+  .single-menu img {
+    margin-bottom: 25px;
+  }
+  .card {
+    margin: 100px 50px 100px 50px;
+    border: 1px solid #fff;
+  }
+  .card-body {
+    margin-top: 5px;
+  }
+  .card-body h5 {
+    font-family: "GFS Didot", serif;
+    font-size: 2em;
+    margin-left: 10px;
+  }
+  .card-text {
+    margin-left: 10px;
+  }
+  .acercaDinerPlaza {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
     width: 100%;
-    margin: 10px auto;
+    height: 300px;
+  }
+  .dinerPlaza-titulo {
+    font-size: 1.6em;
+    position: center;
+    display: inline-block;
+    margin-top: 30px;
+  }
+  .dinerPlaza-texto {
+    margin: 20px 20px 20px 20px;
+    padding: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .single-menu {
+    flex-direction: column;
+  }
+  .single-menu img {
+    margin-bottom: 25px;
   }
   .section-title {
     text-align: center;
@@ -627,17 +685,18 @@ footer {
     left: 50%;
     transform: translateX(-50%);
   }
-
   .menus {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-  .menu-colum {
-    width: 90%;
-    margin: 15px;
+  .menu-column {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
   .acercaDinerPlaza {
     display: flex;
     flex-direction: column;
@@ -655,51 +714,4 @@ footer {
   .dinerPlaza-texto {
     margin: 20px 50px 20px 50px;
   }
-}
-
-@media (max-width: 991px) {
-  .main {
-    width: 750px;
-  }
-  .single-menu {
-    flex-direction: row;
-  }
-  .single-menu img {
-    margin-bottom: 25px;
-  }
-
-  .card {
-    margin: 100px 50px 100px 50px;
-    border: 1px solid #fff;
-  }
-  .card-body {
-    margin-top: 5px;
-  }
-  .card-body h5 {
-    font-family: "GFS Didot", serif;
-    font-size: 2em;
-    margin-left: 10px;
-  }
-  .card-text {
-    margin-left: 10px;
-  }
-
-  .acercaDinerPlaza {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #fff;
-    width: 100%;
-    height: 300px;
-  }
-  .dinerPlaza-titulo {
-    font-size: 1.6em;
-    position: center;
-    display: inline-block;
-    margin-top: 30px;
-  }
-  .dinerPlaza-texto {
-    margin: 20px 20px 20px 20px;
-    padding: 50px;
-  }
-}
+}/*# sourceMappingURL=style.css.map */
