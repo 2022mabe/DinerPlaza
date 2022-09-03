@@ -1,4 +1,32 @@
-/* ******************* MENU-Detalle Menú ***************** */
+/* ******************* MENU - Hero ***************** */
+
+.hero-menu {
+  background-image: url(/imagenes/hamburguesa-cerveza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 35rem;
+  color: #fff;
+}
+
+.hero-menu h2 {
+  font-size: 3.6em;
+  line-height: 1.3em;
+  font-weight: 300;
+  font-family: "GFS Didot", serif;
+}
+.hero-menu h2 span {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+.hero-menu p {
+  font-size: 1.2em;
+  display: flex;
+  align-items: initial;
+  margin-left: 20px;
+}
 
 .main {
   width: 100%;
@@ -30,6 +58,8 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 .menu-column {
   width: 30%;
@@ -49,7 +79,7 @@
   position: absolute;
   width: 40px;
   height: 1.5px;
-  background-color: #3bc4b2;
+  background-color: #1e1e1e;
   bottom: 0;
 }
 .single-menu {
@@ -70,8 +100,8 @@
 }
 .single-menu .menu-content h5 {
   text-transform: capitalize;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 0.8em;
+  font-weight: 400;
   border-bottom: 1px dashed #222;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -83,66 +113,35 @@
   font-style: normal;
   font-size: 1em;
 }
-.card {
-  margin: 150px 100px 100px 160px;
-  border: 1px solid #fff;
-}
 .card-body {
-  margin-top: 5px;
-}
-.card-body h5 {
-  font-family: "GFS Didot", serif;
-  font-size: 2em;
-  margin-left: 30px;
-}
-.card-text {
-  margin-left: 30px;
-}
-.acercaDinerPlaza {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  background-color: #fff;
-  width: 100%;
-  height: 300px;
-}
-.dinerPlaza-titulo {
-  font-size: 1.6em;
-  position: center;
-  display: inline-block;
-  margin-top: 50px;
-}
-.dinerPlaza-texto {
-  margin: 20px 200px 20px 200px;
-  font-size: 1em;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
-/* ******************* MENU - Hero ***************** */
-.hero-menu {
-  position: relative;
+.card-body h5 {
+  font-size: 4em;
+  font-style: italic;
+}
+.items-menu {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.items-menu a {
+  text-decoration: none;
+  color: #333232;
+}
+.item-hover {
   width: 100%;
-  min-height: 50vh;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1e1e1e;
-  color: #fff;
+  height: 100px;
+  border: 1px solid #b6b6b6;
+  margin: 20px auto;
+  padding: 20px 30px;
+  transition: all 0.3s ease;
 }
-.hero-menu h1 {
-  font-size: 2.7em;
-  line-height: 1.3em;
-  font-weight: 500;
-  font-family: "GFS Didot", serif;
-}
-.hero-menu h1 span {
-  font-size: 1.3em;
-  font-weight: 800;
-  color: #3bc4b2;
-}
-.textbox p {
-  display: flex;
-  align-items: initial;
-  margin-left: 20px;
+
+.item-hover:hover {
+  box-shadow: 2px 2px 5px #b6b6b6;
 }

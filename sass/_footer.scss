@@ -27,8 +27,8 @@ footer {
 .sci {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(5, 50px);
-  gap: 10px;
+  grid-template-columns: repeat(5, 30px);
+  gap: 5px;
 }
 .sci li {
   list-style: none;
@@ -36,14 +36,14 @@ footer {
 
 .sci li a {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: #1e1e1e;
   display: grid;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .sci li a:hover {

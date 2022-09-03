@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="restaurant en mendoza, restaurantes en mendoza, restaurantes mendoza capital, mejores restaurantes mendoza, restaurantes mendoza precios, restaurantes en mendoza capital, mejor restaurante en mendoza, restaurantes en mendoza centro, restaurantes en mendoza abiertos hoy, restaurantes en mendoza con show, hotel hyatt mendoza, casinos en mendoza, casino mendoza Hyatt, park hyatt mendoza, bistro restaurante, casinos de mendoza, hotel casino en mendoza"
+    />
+    <meta
+      name="description"
+      content="Junto a los platos americanos hay cocina Tex Mex, carnes a la brasa y alternativas para vegetarianos y veganos. Descubrí la magia de los 50s | Consúltanos!"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <title>Diner Plaza</title>
+    <title>Descubrí los sabores de nuestro Menú americano | Diner Plaza</title>
     <script
       src="https://kit.fontawesome.com/7a3ed02a48.js"
       crossorigin="anonymous"
@@ -21,7 +29,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light withe">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">DINER Plaza</a>
+          <a class="navbar-brand" href="../index.html">DINER Plaza</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -55,10 +63,13 @@
 
     <main>
       <section class="hero-menu">
-        <div class="contenido">
-          <div class="textbox">
-            <h1>Nuestro <span>Menú</span></h1>
-            <p>Todo lo que tenemos para ofrecer de un vistazo</p>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item"></div>
           </div>
         </div>
       </section>
@@ -189,7 +200,7 @@
         <div class="row g-0">
           <div class="col-sm-12 col-md-12 col-lg-5">
             <img
-              src="/imagenes/close-up-burgers-with-pickles.jpg"
+              src="/imagenes/Plato-pesca-del-dia-bistroM.jpg"
               class="img-fluid w-100"
               alt="card-horizontal-image"
             />
@@ -198,26 +209,46 @@
             <div class="card-body">
               <h5 class="card-title">Sabores Intensos</h5>
               <p class="card-text">
-                Nuestras hamburguesas de ternera 100% fresca son masajeadas una
-                a una diariamente. ¡Esta artesanía permite que nuestras
-                hamburguesas se mantengan más sabrosas que nunca!
+                Descubre en DINER PLAZA los sabores de nuestra cocina
+                internacional preparada por nuestro más prestigioso chef de
+                Mendoza. Nivel de excelencia para tu menú Vintage de los años
+                50s.
               </p>
               <p class="card-text">
                 <small class="text-muted">¡Esperamos verte pronto!</small>
               </p>
+              <div class="items-menu">
+                <div class="item-hover">
+                  <a href="#">Menú Americano</a>
+                </div>
+                <div class="item-hover">
+                  <a href="#">Tragos temáticos inspirados en los años 50s</a>
+                </div>
+                <div class="item-hover">
+                  <a href="#">Ambientación Vintage</a>
+                </div>
+                <div class="item-hover">
+                  <a href="#">Show en vivo de música retro</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="acercaDinerPlaza">
-        <h2 class="dinerPlaza-titulo">¿QUE ES DINER PLAZA?</h2>
-        <p class="dinerPlaza-texto">
-          Es un lugar de encuentro para amantes de los años 50s, el lugar
-          perfecto para eventos, fiestas de cumpleaños, fiestas temáticas,
-          aniversarios, despedidas de soltero/a. ¡El sueño americano se ha hecho
-          realidad!
-        </p>
-      </div>
+
+      <section class="reserve-aqui">
+        <div class="reserve-titulo">
+          <h2>RESERVE AQUI</h2>
+        </div>
+        <div class="reserve-contenido">
+          Nuestra ciudad fue nombrada como Capital Internacional del Vino y
+          elegida como una de las 21 ciudades más maravillosas del mundo. Forma
+          parte de una Red Mundial junto a otras famosas ciudades vitivinícolas,
+          lo que permite colocar a los vinos mendocinos en una inmejorable
+          posición en el mundo, siendo el Malbec, su variedad insignia
+        </div>
+        <button type="button" class="btn btn-outline-dark">RESERVAR</button>
+      </section>
     </main>
 
     <footer>
@@ -262,10 +293,10 @@
         <div class="section-quicklinks">
           <h2>Servicios</h2>
           <ul>
-            <li><a href="./secciones/menu.html">Menu</a></li>
-            <li><a href="./secciones/contacto.html">Contacto</a></li>
-            <li><a href="./secciones/sobreNosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./secciones/reservas.html">Reservas</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
+            <li><a href="./reservas.html">Reservas</a></li>
           </ul>
         </div>
         <div class="seccion-contacto">
@@ -289,9 +320,7 @@
         </div>
       </div>
     </footer>
-    <div class="copyrightText">
-      <p>Copyright @ 2022 Eduardo Aguilera. Todos los derechos reservados</p>
-    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
