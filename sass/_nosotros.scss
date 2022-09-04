@@ -66,3 +66,21 @@
 .card-Outlets .row {
   padding: 30px;
 }
+
+@media (max-width: 768px) {
+  .card-bodyNosotros {
+    /*margin-left: 10px;
+  margin-top: 20px;*/
+    padding: 10px;
+  }
+  .card-Outlets {
+    margin: 100px 10px 10px 50px;
+  }
+  .card-Outlets img {
+    padding: 5px;
+  }
+
+  .card-Outlets .row {
+    padding: 5px;
+  }
+}

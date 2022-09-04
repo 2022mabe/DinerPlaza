@@ -95,3 +95,104 @@ footer {
   color: #fff;
   font-size: 0.8em;
 }
+
+@media (min-width: 992px) {
+  footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25px 50px;
+    background-color: #f3f3f3;
+  }
+  .container-footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+
+  .container-footer .section-aboutus h2 {
+    position: relative;
+    color: #1e1e1e;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+  }
+
+  .container-footer .section-aboutus p {
+    color: #1e1e1e;
+  }
+  .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 30px);
+    gap: 5px;
+  }
+  .sci li {
+    list-style: none;
+  }
+
+  .sci li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #1e1e1e;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  .sci li a:hover {
+    background-color: #69737c;
+  }
+  .sci li a .fa {
+    color: #fff;
+    font-size: 1em;
+  }
+  .section-quicklinks {
+    position: relative;
+    margin-bottom: 0px;
+  }
+  .section-quicklinks h2 {
+    font-size: 1.5em;
+  }
+  .section-quicklinks li {
+    list-style: none;
+  }
+  .section-quicklinks li a {
+    color: #1e1e1e;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .section-quicklinks li a:hover {
+    color: #69737c;
+  }
+  .seccion-contacto h2 {
+    font-size: 1.5em;
+  }
+  .info li {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    margin-bottom: 5px;
+  }
+  .info a {
+    text-decoration: none;
+    color: #1e1e1e;
+  }
+  .info a:hover {
+    color: #69737c;
+  }
+  .copyrightText {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 08px 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+    margin-top: 20px;
+  }
+}
