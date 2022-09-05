@@ -47,3 +47,16 @@
   color: #1e1e1e;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .cards-contacto {
+    margin: 0 auto;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+  }
+}

@@ -8,7 +8,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 h2 {
@@ -401,7 +401,7 @@ footer {
 }
 @media (max-width: 992px) {
   .menu-column {
-    width: 45%;
+    width: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -416,12 +416,18 @@ footer {
   }
   .single-menu {
     flex-direction: row;
+    align-items: flex-start;
   }
   .single-menu img {
     margin-bottom: 25px;
   }
 }
 /* __________________  __________________*/
+.card {
+  margin: 100px 50px 20px 100px;
+  border: 1px solid #fff;
+}
+
 .card-body {
   margin-left: 80px;
   margin-right: 80px;
@@ -437,6 +443,10 @@ footer {
   flex-direction: column;
   font-size: 1.1em;
   font-style: italic;
+}
+
+.card img {
+  height: 100vh;
 }
 
 .items-menu a {
@@ -467,7 +477,7 @@ footer {
 }
 @media (max-width: 768px) {
   .card {
-    margin: 100px 20px 20px 100px;
+    margin: 50px 50px 20px 50px;
     border: 1px solid #fff;
   }
   .card-title {
@@ -505,6 +515,12 @@ footer {
     margin-left: 10px;
   }
 }
+@media (max-width: 1439px) and (min-width: 993px) {
+  .card {
+    margin: 10px 10px 10px 10px;
+    border: 1px solid #fff;
+  }
+}
 /* |||||||||||||||||||||||||||||||||||||||| URL HOME - SECTION MAIN - Hero ||||||||||||||||||||||||||||||||||||||||*/
 .nav {
   display: flex;
@@ -525,7 +541,7 @@ h3 {
 
 p {
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 /* |||||||||||| URL HOME |||||||||| */
@@ -544,6 +560,7 @@ p {
   grid-column: 2/10;
   grid-row: 4/7;
   color: #fff;
+  background-color: hsla(0deg, 0%, 12%, 0.5);
 }
 
 span {
@@ -552,7 +569,7 @@ span {
 
 btn {
   font-size: 1em;
-  background: none;
+  background: #fff;
   color: #fff;
   padding: 10px 20px;
   border: 1px solid #fff;
@@ -575,31 +592,32 @@ btn {
 }
 /* =========Descripción ============*/
 .descripcion {
-  height: 250px;
+  height: 480px;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   background-color: #f8f8f8;
-  margin: 50px 100px 50px 100px;
+  margin: 40px 10px 40px 10px;
 }
 
 .descripcion-titulo h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 400;
 }
 
 .descripcion-texto {
-  margin-top: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .descripcion {
-    height: 100%;
+    height: 300px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #f8f8f8;
-    margin: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
   }
   .descripcion-titulo h2 {
     font-size: 2.2em;
@@ -611,13 +629,13 @@ btn {
     margin-right: 5px;
   }
 }
-@media (max-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (min-width: 768px) {
   .descripcion {
     height: 350px;
     text-align: center;
     padding: 20px;
     background-color: #f8f8f8;
-    margin: 40px 30px 20px 30px;
+    margin: 50px 45px 30px 50px;
   }
   .descripcion-titulo h2 {
     font-size: 2.2em;
@@ -630,13 +648,13 @@ btn {
     margin-right: 10px;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .descripcion {
-    height: 250px;
+    height: 300px;
     text-align: center;
     padding: 20px;
     background-color: #f8f8f8;
-    margin: 20px 20px 20px 20px;
+    margin: 100px 20px 20px 20px;
   }
   .descripcion-titulo h2 {
     font-size: 2.2em;
@@ -655,7 +673,12 @@ btn {
     text-align: center;
     padding: 20px;
     background-color: #f8f8f8;
-    margin: 50px 20px 50px 20px;
+    margin: 50px 20px 20px 50px;
+  }
+  .descripcion-texto {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 /* =========================== HOME - SECTION MAIN- CARRUSEL - BOOTSTRAP ================*/
@@ -743,7 +766,7 @@ btn {
 }
 /*============================ HOME - SECTION MAIN - Diner Plaza ============================*/
 .diner-plaza {
-  height: 200px;
+  height: 320px;
   text-align: center;
   padding: 20px;
   background-color: #f8f8f8;
@@ -752,20 +775,25 @@ btn {
 
 .diner-plaza-titulo h2 {
   font-family: "GFS Didot", serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 400;
 }
 
-.diner-plaza-texto {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
+.dinerPlaza-texto {
+  margin: 20px 20px 20px 20px;
+  padding: 50px;
 }
 
-@media (max-width: 576px) {
+.dinerPlaza-titulo {
+  font-size: 1.6em;
+  position: center;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
   .diner-plaza {
-    height: 400px;
+    height: 300px;
     text-align: center;
     padding: 20px;
     background-color: #f8f8f8;
@@ -782,13 +810,13 @@ btn {
     margin-right: 20px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .diner-plaza {
-    height: 300px;
+    height: 200px;
     text-align: center;
     padding: 5px;
     background-color: #f8f8f8;
-    margin: 50px 10px 10px 50px;
+    margin: 50px 70px 50px 70px;
   }
   .diner-plaza-titulo h2 {
     font-family: "GFS Didot", serif;
@@ -802,80 +830,58 @@ btn {
   }
 }
 @media (min-width: 992px) {
-  .diner-plaza-texto {
-    margin-right: 200px;
-    margin-left: 200px;
-  }
-  .diner-plaza {
-    height: 300px;
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f8f8;
-    margin: 50px 100px 50px 100px;
-  }
-  .dinerPlaza-titulo {
-    font-size: 1.6em;
-    position: center;
-    display: inline-block;
-    margin-top: 30px;
-  }
   .dinerPlaza-texto {
-    margin: 20px 20px 20px 20px;
+    margin: 20px 100px 20px 100px;
     padding: 50px;
   }
-  .diner-plaza-titulo h2 {
-    font-family: "GFS Didot", serif;
-    font-size: 2.2em;
-    font-weight: 400;
-  }
-  .diner-plaza-texto {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  /* ========= CARD HEROE ============*/
-  .cards-hero {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1em;
-  }
-  .card-hero {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  }
-  .card-hero h2 {
-    font-size: 1.8em;
-  }
-  .card__image {
-    width: 100%;
-    display: block;
-  }
-  .card__content {
-    line-height: 1.5;
-    font-size: 0.9em;
-    padding: 15px;
-    background: #fafafa;
-  }
-  .card__info {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    background: #eee;
-    font-size: 0.8em;
-    align-items: center;
-  }
-  .card__link {
-    color: #1e1e1e;
-    text-decoration: none;
-  }
-  /*============================ CARDS - OUTLETS HOTEL ============================*/
-  /*============================ RESERVE AQUI ============================*/
 }
-@media (min-width: 992px) and (max-width: 768px) {
+/* ========= CARD HEROE ============*/
+.cards-hero {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+}
+
+.card-hero {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-hero h2 {
+  font-size: 1.8em;
+}
+
+.card__image {
+  width: 100%;
+  display: block;
+}
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+}
+
+.card__info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  font-size: 0.8em;
+  align-items: center;
+}
+
+.card__link {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
   .cards-hero {
     margin: 0 auto;
     max-width: 80%;
@@ -886,63 +892,58 @@ btn {
     font-size: 1em;
   }
 }
-@media (min-width: 992px) {
-  .cards-heroEnd-titulo-h2 {
-    text-align: center;
-    margin-top: 100px;
-  }
+/*============================ CARDS - OUTLETS HOTEL ============================*/
+.cards-heroEnd-titulo-h2 {
+  text-align: center;
+  margin-top: 100px;
 }
-@media (min-width: 992px) {
-  .cards-heroEnd {
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    max-width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1em;
-  }
+
+.cards-heroEnd {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
 }
-@media (min-width: 992px) {
-  .card__image {
-    width: 100%;
-    display: block;
-  }
+
+.card__image {
+  width: 100%;
+  display: block;
 }
-@media (min-width: 992px) {
-  .card__content {
-    line-height: 1.5;
-    font-size: 0.9em;
-    padding: 15px;
-    background-color: #fff;
-  }
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background-color: #fff;
 }
-@media (min-width: 992px) {
-  .card__info {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    background: #fff;
-    font-size: 0.8em;
-    align-items: center;
-  }
-  .card__info div:first-child {
-    display: flex;
-    align-items: center;
-  }
-  .card__info ion-icon {
-    margin-right: 0.5rem;
-  }
+
+.card__info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  font-size: 0.8em;
+  align-items: center;
 }
-@media (min-width: 992px) {
-  .card__link {
-    color: #1e1e1e;
-    text-decoration: none;
-  }
+.card__info div:first-child {
+  display: flex;
+  align-items: center;
 }
-@media (min-width: 992px) and (max-width: 768px) {
+.card__info ion-icon {
+  margin-right: 0.5rem;
+}
+
+.card__link {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
   .cards-heroEnd {
     margin: 0 auto;
     max-width: 80%;
@@ -953,37 +954,34 @@ btn {
     font-size: 1em;
   }
 }
-@media (min-width: 992px) {
-  .reserve-aqui {
-    text-align: center;
-    height: 500px;
-    background-color: #f8f8f8;
-    color: #1e1e1e;
-    align-items: center;
-    padding: 20px;
-  }
+/*============================ RESERVE AQUI ============================*/
+.reserve-aqui {
+  text-align: center;
+  height: 500px;
+  background-color: #f8f8f8;
+  color: #1e1e1e;
+  align-items: center;
+  padding: 20px;
 }
-@media (min-width: 992px) {
-  .reserve-titulo {
-    margin-top: 100px;
-  }
+
+.reserve-titulo {
+  margin-top: 100px;
 }
-@media (min-width: 992px) {
-  .reserve-contenido {
-    margin: 0 200px;
-    margin-top: 50px;
-  }
+
+.reserve-contenido {
+  margin: 0 200px;
+  margin-top: 50px;
 }
-@media (min-width: 992px) {
-  .reserve-aqui .btn {
-    margin-top: 50px;
-  }
+
+.reserve-aqui .btn {
+  margin-top: 50px;
 }
+
 @media (max-width: 768px) {
   .reserve-aqui {
     margin-top: 20px;
     text-align: center;
-    height: 500px;
+    height: 300px;
     background-color: #f8f8f8;
     color: #1e1e1e;
     align-items: center;
@@ -993,7 +991,7 @@ btn {
     margin-top: 80px;
   }
   .reserve-contenido {
-    margin: 0 20px;
+    margin: 0 10px;
   }
   .reserve-aqui .btn {
     margin-top: 50px;
@@ -1002,7 +1000,7 @@ btn {
 @media (max-width: 992px) {
   .reserve-aqui {
     text-align: center;
-    height: 500px;
+    height: 450px;
     background-color: #f8f8f8;
     color: #1e1e1e;
     align-items: center;
@@ -1012,7 +1010,7 @@ btn {
     margin-top: 100px;
   }
   .reserve-contenido {
-    margin: 0 80px;
+    margin: 0 30px;
   }
   .reserve-aqui .btn {
     margin-top: 50px;
@@ -1072,6 +1070,19 @@ btn {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .cards-contacto {
+    margin: 0 auto;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+  }
+}
 .hero-nosotros {
   background-image: url(/imagenes/Ingreso-Hotel-Hyatt-Mendoza.jpg);
   background-size: cover;
@@ -1152,19 +1163,37 @@ btn {
 }
 
 @media (max-width: 768px) {
+  .acercaDinerPlaza {
+    height: 200px;
+  }
+  .card {
+    margin: 25px 20px 20px 25px;
+    border: 1px solid #fff;
+  }
+  .dinerPlaza-texto {
+    margin: 20px 30px 20px 30px;
+  }
   .card-bodyNosotros {
     /*margin-left: 10px;
     margin-top: 20px;*/
     padding: 10px;
   }
   .card-Outlets {
-    margin: 100px 10px 10px 50px;
+    margin: 100px 10px 10px 20px;
   }
   .card-Outlets img {
     padding: 5px;
   }
   .card-Outlets .row {
     padding: 5px;
+  }
+}
+@media (max-width: 1439px) and (min-width: 993px) {
+  .card {
+    margin: 25px 20px 20px 25px;
+  }
+  .dinerPlaza-texto {
+    margin: 20px 50px 20px 50px;
   }
 }
 .hero-reservas {
@@ -1181,8 +1210,8 @@ btn {
 
 .form-reservas {
   height: 500px;
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 200px;
+  margin-left: 200px;
   margin-top: 50px;
   margin-top: 50px;
 }
@@ -1199,10 +1228,10 @@ btn {
     font-size: 3em;
   }
   .form-reservas {
-    height: 600px;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 0px;
+    height: 750px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
   }
 }
 /*===================================   Main Hero ======================================*/
@@ -1254,17 +1283,6 @@ btn {
     margin: 0 auto;
     margin-top: 100px;
     max-width: 90%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1em;
-  }
-  .cards-contacto {
-    margin: 0 auto;
-    margin-bottom: 150px;
-    margin-top: 150px;
-    max-width: 80%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;

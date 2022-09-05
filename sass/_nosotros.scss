@@ -68,13 +68,24 @@
 }
 
 @media (max-width: 768px) {
+  .acercaDinerPlaza {
+    height: 200px;
+  }
+
+  .card {
+    margin: 25px 20px 20px 25px;
+    border: 1px solid #fff;
+  }
+  .dinerPlaza-texto {
+    margin: 20px 30px 20px 30px;
+  }
   .card-bodyNosotros {
     /*margin-left: 10px;
   margin-top: 20px;*/
     padding: 10px;
   }
   .card-Outlets {
-    margin: 100px 10px 10px 50px;
+    margin: 100px 10px 10px 20px;
   }
   .card-Outlets img {
     padding: 5px;
@@ -82,5 +93,13 @@
 
   .card-Outlets .row {
     padding: 5px;
+  }
+}
+@media (max-width: 1439px) and (min-width: 993px) {
+  .card {
+    margin: 25px 20px 20px 25px;
+  }
+  .dinerPlaza-texto {
+    margin: 20px 50px 20px 50px;
   }
 }
