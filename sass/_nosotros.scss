@@ -61,6 +61,8 @@
 }
 .card-Outlets img {
   padding: 30px;
+  width: 100%;
+  height: 100%;
 }
 
 .card-Outlets .row {
@@ -70,6 +72,8 @@
 @media (max-width: 768px) {
   .acercaDinerPlaza {
     height: 200px;
+    margin-top: 50px;
+    margin-bottom: 200px;
   }
 
   .card {
@@ -78,6 +82,7 @@
   }
   .dinerPlaza-texto {
     margin: 20px 30px 20px 30px;
+    padding: 10px;
   }
   .card-bodyNosotros {
     /*margin-left: 10px;

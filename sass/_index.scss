@@ -24,47 +24,70 @@ p {
 /* |||||||||||| URL HOME |||||||||| */
 
 /* ========= HERO ============*/
-.hero {
+.body-hero {
+  background-image: url(/imagenes/1600_company.jpg);
+  width: 100%;
   height: 90vh;
-  background-image: url(../imagenes/Big-Restaurant1950s.jpg);
   background-size: cover;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.info-content {
-  grid-column: 2 / 10;
-  grid-row: 4 / 7;
+.box {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  background: transparent;
+  border: 1px transparent rgba(0, 0, 0, 0.5);
+  /*border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.55);
+}
+.box:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: -1;
+}
+.box h2 {
+  text-align: center;
+  line-height: 50px;
   color: #fff;
-  background-color: hsla(0, 0%, 12%, 0.5);
+  font-size: 1.5em;
+  font-weight: 200;
 }
-
-span {
-  font-size: 1em;
-}
-btn {
-  font-size: 1em;
-  background: #fff;
+.box h1 {
+  text-align: center;
+  line-height: 60px;
   color: #fff;
-  padding: 10px 20px;
-  border: 1px solid #fff;
-  margin-top: 25px;
+  font-size: 4em;
+  font-weight: 400;
 }
 
-@media (min-width: 576px) {
-  .hero .info-content {
-    grid-column: 2 / 8;
-    grid-row: 4 / 6;
-    color: #fff;
+@media (max-width: 768px) {
+  .box {
+    position: relative;
+    width: 300px;
+    height: 250px;
   }
-  .hero h1 {
-    font-size: 3em;
-    font-weight: 500;
+  .box h2 {
+    line-height: 40px;
+    font-size: 1.1em;
+    font-weight: 200;
   }
-  .hero .info-content h1 {
+  .box h1 {
+    line-height: 50px;
     font-size: 3em;
+    font-weight: 400;
   }
 }
 
@@ -133,8 +156,9 @@ btn {
     text-align: center;
     padding: 20px;
     background-color: #f8f8f8;
-    margin: 100px 20px 20px 20px;
+    margin: 100px 100px 100px 100px;
   }
+
   .descripcion-titulo h2 {
     font-size: 2.2em;
     font-weight: 400;
