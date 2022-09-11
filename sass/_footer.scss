@@ -55,7 +55,7 @@ footer {
 }
 .section-quicklinks {
   position: relative;
-  margin-bottom: 10px;
+  margin-top: 40px;
 }
 .section-quicklinks h2 {
   font-size: 1.5em;
@@ -74,6 +74,7 @@ footer {
 }
 .seccion-contacto h2 {
   font-size: 1.5em;
+  margin-top: 40px;
 }
 .info li {
   display: grid;
@@ -94,6 +95,13 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 0.8em;
+}
+
+@media (min-width: 768px) {
+  .section-quicklinks {
+    position: relative;
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 992px) {
