@@ -107,6 +107,23 @@
     margin-bottom: 300px;
   }
 }
+@media (max-width: 993px) and (min-width: 769px) {
+  .dinerPlaza-texto {
+    margin: 20px 10px 20px 10px;
+    padding: 10px;
+  }
+  .card-Outlets {
+    margin: 50px 10px 10px 20px;
+  }
+  .acercaDinerPlaza {
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  .card-Outlets .row {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 1439px) and (min-width: 993px) {
   .card {
     margin: 25px 20px 20px 25px;

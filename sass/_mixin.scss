@@ -1,0 +1,19 @@
+@mixin tablet {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin miniMobile {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+@mixin medidas($width, $height) {
+  width: $width;
+  height: $height;
+}
